@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Waste Classification</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+
+<header>
+    <h2>Eco<span>AI</span></h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#classify">Classify Waste</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Smart Waste Classification</h1>
+    <p>Upload a waste image and let AI identify its category.</p>
+    <a href="#classify" class="btn">Start Classification</a>
+</section>
+
+<section class="classify" id="classify">
+    <h2>Waste Image Classification</h2>
+    <p>Upload an image of waste to identify its category.</p>
+
+    <div class="upload-box">
+        <input type="file" id="imageInput" accept="image/*">
+
+        <img id="preview" alt="Waste image preview">
+
+        <button class="btn" id="classifyBtn">
+            Classify Waste
+        </button>
+
+        <button class="reset" id="resetBtn">
+            Reset
+        </button>
+    </div>
+
+    <p id="status">Loading AI model...</p>
+
+    <div class="result" id="result">
+        <h3>Classification Result</h3>
+        <h2 id="category"></h2>
+        <p id="confidence"></p>
+        <p id="description"></p>
+        <p id="disposal"></p>
+    </div>
+</section>
+
+<section class="categories">
+    <h2>Waste Categories</h2>
+
+    <div class="cards">
+        <div class="card">♻️<h3>Plastic</h3></div>
+        <div class="card">📄<h3>Paper</h3></div>
+        <div class="card">🥫<h3>Metal</h3></div>
+        <div class="card">🍾<h3>Glass</h3></div>
+        <div class="card">🍃<h3>Organic</h3></div>
+        <div class="card">🔌<h3>E-Waste</h3></div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About EcoAI</h2>
+    <p>
+        EcoAI is an AI-powered waste classification web application.
+        It uses image recognition technology to identify waste
+        materials and provide suitable disposal suggestions.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 EcoAI | Smart Waste Classification System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

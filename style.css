@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f3f8f3;
+    color: #222;
+}
+
+header {
+    background: #174d35;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 span {
+    color: #9be6a5;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #174d35, #37965e);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn {
+    background: #219653;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #14733e;
+}
+
+.classify {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 35px;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.classify h2 {
+    color: #174d35;
+    margin-bottom: 15px;
+}
+
+.upload-box {
+    margin-top: 25px;
+    padding: 25px;
+    border: 2px dashed #55a875;
+    border-radius: 12px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+#preview {
+    display: none;
+    width: 250px;
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.reset {
+    background: #777;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 20px 5px 0;
+}
+
+#status {
+    margin-top: 20px;
+    color: #277447;
+}
+
+.result {
+    display: none;
+    background: #e8f5e9;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.result h3 {
+    color: #174d35;
+    margin-bottom: 15px;
+}
+
+.result p {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.categories {
+    text-align: center;
+    padding: 50px 8%;
+}
+
+.categories h2, .about h2 {
+    color: #174d35;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 30px;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-top: 12px;
+    color: #277447;
+}
+
+.about {
+    background: #e1f1e4;
+    text-align: center;
+    padding: 60px 15%;
+    line-height: 1.8;
+}
+
+footer {
+    background: #174d35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .classify {
+        margin: 25px 12px;
+        padding: 20px;
+    }
+}
